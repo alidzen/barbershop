@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Borodinsky</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="layout-center-wrapper">
+            <ul class="top-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a class="active pis" href="#">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="account-menu">
+                <a class="account-menu-enter account-menu-enter-disabled" href="#">Вход</a>
+            </div>
+        </div><!--layout-c-wr-->
+    </div>
+    <div class="layout-center-wrapper">
+            <div class="logo">
+                <img src="img/logo.png" alt="BarberShop">
+            </div>
+            <ul class="features">
+                <li>
+                    <div class="features-title">Быстро</div>
+                    <p> Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+                </li>
+                <li>
+                    <div class="features-title">Круто</div>
+                    <p> Забудьте, как вы стриглись раньше.<br> Мы сделаем из Вас звезду футбола или кино! Во всякм случае внешне.</p>
+                </li>
+                <li>
+                    <div class="features-title">Дорого</div>
+                    <p> Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+                </li>
+            </ul><!--/features-->
+        </div>
+    <div class="login-popup">
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль<br>Если вы забыли пароль</p>
+            <form class="login-form" action="/auth" method="post">
+            <input class="login-field" type="text" name="login" placeholder="Логин">
+            <input class="password-field" type="password" name="password-field" placeholder="Пароль"> 
+            <input type="checkbox" checked name="remember" id="remember"><label for="remember">Запомнить меня</label>
+            <a class="restore" href="/restore">Я забыл пароль</a>
+            <input type="submit" value="Войти">
+        </form>
+    </div>
+</body>
+</html>

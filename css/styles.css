@@ -1,0 +1,314 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    font-size: 16px;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    background: black url(../img/body-bg.jpg) no-repeat 50% 0;
+}
+    
+.page1 {
+    background: white;
+}
+
+.header {
+    color: white;
+    background-color: black;
+}
+
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active {
+    color: white;
+}
+
+.layout-center-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.layout-center-wrapper:after {
+    display: table;
+    clear: both;
+    content:"";
+}
+
+.top-menu {
+    float: left;
+    width: 78,72%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-menu a.active {
+    box-shadow: 0 15px 0 -10px white;
+}
+
+.account-menu {
+    float: right;
+    max-width: 14,89%;
+}
+
+.top-menu li {
+    display: inline-block;
+}
+
+.top-menu a {
+    display: block;
+    padding: 30px 20px;
+    text-decoration: none;
+    margin-right: -0.2em;
+}
+
+.top-menu a:hover {
+    background-color: #242424;
+}
+
+
+.account-menu-enter {
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    padding-left: 35px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.account-menu-enter:hover {
+    background-color: #242424;
+}
+
+.account-menu-enter:before {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background: url(../img/enter-icon.png) no-repeat 0 0;
+}
+
+.account-menu-enter-disabled:before {
+    opacity: 0.3;
+}
+
+/*styles inner page*/
+.page1-title {
+    margin: 3.1em 0; /* 50px/16px */
+}
+
+.page1-title h1 {
+    margin: 0;
+    font-size: 1.875em; /* 30px/16px */
+    line-height: 1.4; /* 42px (height line)/30px(height font)  */
+    font-weight: bold; 
+}
+
+.page1-content {
+    margin: 3.55em 0; /* 50px/14px/ */
+    font-size: 0.875em; /* 14px/16px */
+    line-height: 1.7; /* 24px/14px */
+    font-weight: bold;
+}
+
+.page1-content h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.page1-content h2 {
+    font-size: 1.7em; /* 24px/14px */
+    line-height: 1.25; /* 30px/24px */
+}
+
+.page1-content p {
+    margin: 1em 0;
+}
+
+.mega-title {
+    margin-top: 3.55em; /* 50px/14px */
+    margin-bottom: 4.5em; /* 63px/14px */
+    text-align: center;
+}
+
+.mega-title h2 {
+    position: relative;
+    display: inline;
+    padding: 0 25px;
+    margin: 0;
+    font-size: 3.5em; /* 48px/14px */
+    line-height: 1;
+    z-index: 2;
+    background: white;
+}
+
+.mega-title:after {
+    content: "";
+    position: relative;
+    top: -1.7em; /* on eye*/
+    display: block;
+    border-bottom: 2px solid black;
+    z-index: 1;
+}
+
+.custom-list-1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-list-1 li {
+    padding-left: 20px;
+    margin-bottom: 1em;
+    background: url(../img/custom-marker-1.png) no-repeat 0 50%;
+}
+
+.prices {
+    width: 450px;
+    border-collapse: collapse;
+}
+
+.prices th,
+.prices td {
+    width: 50%;
+    padding: 0.5em 20px;
+    border: 2px solid black;
+}
+
+.prices th {
+    text-align: left;
+}
+
+.prices td {
+    text-align: center;
+}
+
+.logo {
+    width: 366px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.features {
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+
+.features:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.features li {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.features li:last-child {
+    margin-right: 0px;
+}
+
+.features-title {
+    position: relative;
+    margin-bottom: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.features p {
+    line-height: 24px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.features-title:after {
+    content: "";
+    position: absolute;
+    left:50%;
+    bottom: -50px;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/diamond.png) no-repeat 0 0;
+}
+
+
+.login-popup {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+    width: 300px;
+    min-height: 200px;
+    padding: 50px 70px;
+    background: white;
+/*    opacity: 0.1;*/
+}
+
+.login-form {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    display: block;
+    font-family: "PT Sans serif";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 241px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    padding-right: 40px;
+    border: 2px solid black;
+    background-color: #f9f6f3;
+}
+
+.login-form input[type="submit"] {
+    width: 300px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+}
+
+.login-form .login-field {
+    background: url("../img/icon-user.png") no-repeat 270px 12px;
+}
+
+.login-form .password-field {
+    background: url("../img/icon-lock.png") no-repeat 270px 12px;
+}
+
+.login-form .restore {
+    float: right;
+    color: black;
+}
+
+.login-form input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+    
